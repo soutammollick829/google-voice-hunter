@@ -17,7 +17,7 @@ const Logobar = () => {
             <h2 className="flex gap-2 items-center "><FaRegEnvelope className="text-2xl text-red-400"/> rajumandal@gmail.com</h2>
         </div>
         <div className="inline-flex gap-3 text-2xl">
-            <FaFacebook className="text-sky-400"/> <FaSkype className="text-sky-500"/>
+            <FaFacebook className="text-blue-600"/> <FaSkype className="text-sky-500"/>
         </div>
       </div>
       <div className="relative ml-24 lg:ml-0">
