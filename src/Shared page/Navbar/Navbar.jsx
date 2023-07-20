@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link>Chat Gpt</Link>
           </li>
           <li>
-            <Link>About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
             <Link>Contact Us</Link>
