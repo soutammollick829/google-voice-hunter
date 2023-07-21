@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className="-mt-2 lg:mx-10 mb-32">
+    <div className="-mt-2 lg:mx-9 mb-32">
       <div
-        className="hero lg:min-h-screen"
+        className="hero lg:min-h-screen ml-2"
         style={{
           backgroundImage:
             "url(https://www.bu.edu/parentsprogram/files/pexels-charlotte-may-5965930-650x433.jpg)",
@@ -51,7 +51,7 @@ const Contact = () => {
                     </label>
                   <textarea placeholder="Fell free message me" className="textarea textarea-bordered textarea-md w-full" ></textarea>
                   <div className="form-control mt-6">
-                    <button className="btn btn-outline  bg-[#689f38] hover:bg-[#92d458] border-0">send</button>
+                    <button className="btn btn-outline  bg-[#689f38] hover:bg-[#6db82d] border-0">send</button>
                   </div>
                 </div>
               </div>

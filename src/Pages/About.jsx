@@ -1,3 +1,4 @@
+import { Slide, } from "react-awesome-reveal";
 import aboutImage from "../assets/banner/googlevocie_title.png";
 import Qrlogo from "../assets/Logo/362293611_596150325997627_n.jpg";
 const About = () => {
@@ -11,6 +12,7 @@ const About = () => {
       />
       <div className="lg:flex justify-center ml-10 mr-10 mt-10 mb-32 gap-5">
         <div>
+          <Slide>
           <h1 className="text-start text-2xl">
             Welcome to our website, where we offer a wide range of virtual
             communication solutions to meet your personal and business needs. We
@@ -38,6 +40,7 @@ const About = () => {
             serving you and helping you stay connected in today’s fast-paced
             world.
           </h1>
+          </Slide>
         </div>
         <div>
           <div className="stats stats-vertical shadow">

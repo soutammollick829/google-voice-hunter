@@ -1,3 +1,4 @@
+import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex bg-[#689f38]">
-        <ul className="menu menu-horizontal px-1 space-x-5 mx-10 text-white font-bold">
+        <ul className="menu menu-horizontal px-1 space-x-4 text-white font-bold">
           <li>
             <Link>Home</Link>
           </li>
@@ -53,6 +54,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/login"><FaUserCircle className="text-2xl"/>Login</Link>
           </li>
         </ul>
       </div>
