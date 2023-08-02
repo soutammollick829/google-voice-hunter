@@ -33,9 +33,15 @@ const Logobar = () => {
           </h2>
         </div>
         <div className="inline-flex gap-2 mt-2 text-3xl">
-            <a href="https://www.facebook.com/profile.php?id=100029163254747&mibextid=ZbWKwL" target="blank"><FaFacebook className="text-blue-600" /></a>
-            <a href="https://t.me/GoogleVoiceHunter" target="blank"><FaRegPaperPlane className="text-cyan-500" /></a>
-            <a href="https://instagram.com/nguraju?igshid=ZDc4ODBmNjlmNQ=="><FaInstagram className="text-red-800" target="blank"/></a>
+          <div className="tooltip" data-tip="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=100029163254747&mibextid=ZbWKwL" target="blank"><FaFacebook className="text-blue-600" /></a>
+          </div>
+          <div className="tooltip" data-tip="Telegram">
+          <a href="https://t.me/GoogleVoiceHunter" target="blank"><FaRegPaperPlane className="text-cyan-500" /></a>
+          </div>
+          <div className="tooltip" data-tip="Instagram">
+          <a href="https://instagram.com/nguraju?igshid=ZDc4ODBmNjlmNQ=="><FaInstagram className="text-red-800" target="blank"/></a>
+          </div>
           </div>
       </div>
       <div className="relative ml-24 lg:ml-0">

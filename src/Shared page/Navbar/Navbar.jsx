@@ -38,16 +38,16 @@ const Navbar = () => {
             <Link>Home</Link>
           </li>
           <li>
-            <Link>Google voice</Link>
+            <Link to='/voice'>Google voice</Link>
           </li>
           <li>
-            <Link>Text Now IDs</Link>
+            <Link to="/text">Text Now IDs</Link>
           </li>
           <li>
-            <Link>USA Gmail ID</Link>
+            <Link to="/gmail">USA Gmail ID</Link>
           </li>
           <li>
-            <Link>Chat Gpt</Link>
+            <Link to="/gpt">Chat Gpt</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
+          <li className="tooltip" data-tip="hello">
             <Link to="/login"><FaUserCircle className="text-2xl"/>Login</Link>
           </li>
         </ul>

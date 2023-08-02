@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 const ProductsCard = ({ product }) => {
   console.log(product);
@@ -15,7 +16,7 @@ const ProductsCard = ({ product }) => {
     <p>{details?.slice(0,50)}...</p>
     <p className="font-bold text-[#689f38]">Price :${price}</p>
     <div className="card-actions">
-      <button className="btn btn-sm">more info</button>
+      <Link to="/voice"><button className="btn btn-sm">more info</button></Link>
     </div>
   </div>
 </div>

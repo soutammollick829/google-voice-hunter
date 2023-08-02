@@ -5,6 +5,10 @@ import About from "../Pages/About";
 import Contact from "../Pages/contact us/Contact";
 import Login from "../Pages/Login page/Login";
 import Register from "../Pages/Register/Register";
+import GoogleVoice from "../Pages/Google Voice/GoogleVoice";
+import TextNow from "../Pages/Text now/TextNow";
+import UsaGmail from "../Pages/Usa gmail/UsaGmail";
+import ChatGpt from "../Pages/Chat GPT/ChatGpt";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
         {
           path:"/register",
           element:<Register/>
+        },
+        {
+          path:"/voice",
+          element:<GoogleVoice/>
+        },
+        {
+          path:"/text",
+          element:<TextNow/>
+        },
+        {
+          path:"/gmail",
+          element:<UsaGmail/>
+        },
+        {
+          path:"/gpt",
+          element:<ChatGpt/>
         }
       ]
     },
