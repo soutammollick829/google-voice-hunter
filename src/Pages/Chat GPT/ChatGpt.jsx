@@ -67,7 +67,7 @@ const ChatGpt = () => {
           <div className="space-y-5">
             <div className="lg:flex gap-5 mx-14 lg:mx-0">
               <img
-                className="lg:w-28 rounded-lg"
+                className="lg:w-28"
                 src={productImage5}
                 alt="image"
               />
@@ -80,7 +80,7 @@ const ChatGpt = () => {
             </div>
             <div className="lg:flex gap-5 mx-14 lg:mx-0">
               <img
-                className="lg:w-28 rounded-lg"
+                className="lg:w-28"
                 src={productImage1}
                 alt="image"
               />
@@ -93,7 +93,7 @@ const ChatGpt = () => {
             </div>
             <div className="lg:flex gap-5 mx-14 lg:mx-0">
               <img
-                className="lg:w-28 rounded-lg"
+                className="lg:w-28"
                 src={productImage2}
                 alt="image"
               />
@@ -106,7 +106,7 @@ const ChatGpt = () => {
             </div>
             <div className="lg:flex gap-5 mx-14 lg:mx-0">
               <img
-                className="lg:w-28 rounded-lg"
+                className="lg:w-28"
                 src={productImage3}
                 alt="image"
               />
@@ -119,7 +119,7 @@ const ChatGpt = () => {
             </div>
             <div className="lg:flex gap-5 mx-14 lg:mx-0">
               <img
-                className=" lg:w-28 rounded-lg"
+                className=" lg:w-28"
                 src={productImage4}
                 alt="image"
               />

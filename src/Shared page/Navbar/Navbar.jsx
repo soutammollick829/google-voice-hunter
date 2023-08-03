@@ -1,9 +1,25 @@
-import { FaUserCircle } from "react-icons/fa";
+import { useContext } from "react";
+import { FaCogs, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext);
+
+  const handelLogOut = () => {
+    logOut()
+    if(logOut){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Are you sure log out',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
+    }
+  }
   return (
-    <div className="navbar bg-base-100 space-x-9 lg:mt-10">
+    <div className="navbar bg-base-100 space-x-7 lg:mt-10">
       <div>
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -55,9 +71,14 @@ const Navbar = () => {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className="tooltip" data-tip="hello">
+          {
+            user ? <><li onClick={handelLogOut} className="tooltip" data-tip="hello">
+            <Link to="/login"><FaCogs className="text-2xl"/>Log-out</Link>
+          </li></>:
+            <><li className="tooltip" data-tip="hello">
             <Link to="/login"><FaUserCircle className="text-2xl"/>Login</Link>
-          </li>
+          </li></>
+          }
         </ul>
       </div>
 
