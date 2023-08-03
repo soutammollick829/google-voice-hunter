@@ -1,3 +1,4 @@
+import UseCarts from "../../../Hooks/UseCarts";
 import logo from "../../../assets/Logo/Google_Voice_icon_(2018-2020).svg.png";
 import {
   FaFacebook,
@@ -8,6 +9,8 @@ import {
   FaWhatsappSquare,
 } from "react-icons/fa";
 const Logobar = () => {
+  const [carts] = UseCarts();
+console.log(carts);
   return (
     <div className="lg:flex justify-around items-center mt-5 space-y-5">
       <div className="flex items-center gap-3 ml-10 lg:ml-0">
@@ -49,7 +52,7 @@ const Logobar = () => {
           <FaShoppingBasket className="text-[#00796B] text-xl" /> My cart
         </button>
         <div className="badge bg-[#00796B] absolute -top-2 right-44 lg:-right-1 text-white font-bold">
-          +99
+          +{carts?.length || 0}
         </div>
       </div>
     </div>
