@@ -1,4 +1,4 @@
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 import loginImg from "../../assets/login page/bg-login.png";
 
 import { useForm } from "react-hook-form";
@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 
 const Login = () => {
   const {signIn} = useContext(AuthContext);
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -28,6 +29,7 @@ const Login = () => {
       )
     })
     reset()
+    navigate('/')
   };
 
   return (

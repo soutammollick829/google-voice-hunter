@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
-    <div className="-mt-2 lg:mx-9 mb-32">
+    <div className="-mt-2 lg:mx-7 mb-32 px-2">
       <div
-        className="hero lg:min-h-screen ml-2"
+        className="hero lg:min-h-screen "
         style={{
           backgroundImage:
             "url(https://www.bu.edu/parentsprogram/files/pexels-charlotte-may-5965930-650x433.jpg)",
