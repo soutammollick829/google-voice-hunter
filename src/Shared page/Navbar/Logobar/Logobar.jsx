@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import UseCarts from "../../../Hooks/UseCarts";
 import logo from "../../../assets/Logo/Google_Voice_icon_(2018-2020).svg.png";
 import {
@@ -8,7 +9,10 @@ import {
   FaShoppingBasket,
   FaWhatsappSquare,
 } from "react-icons/fa";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import { Link } from "react-router-dom";
 const Logobar = () => {
+  const {user} = useContext(AuthContext);
   const [carts] = UseCarts();
 console.log(carts);
   return (
@@ -48,12 +52,16 @@ console.log(carts);
           </div>
       </div>
       <div className="relative ml-24 lg:ml-0">
+        <Link to="/dashboard/mycart">
         <button className="btn rounded-none">
           <FaShoppingBasket className="text-[#00796B] text-xl" /> My cart
         </button>
-        <div className="badge bg-[#00796B] absolute -top-2 right-44 lg:-right-1 text-white font-bold">
+        </Link>
+        {
+          user && <div className="badge bg-[#00796B] absolute -top-2 right-44 lg:-right-1 text-white font-bold">
           +{carts?.length || 0}
         </div>
+        }
       </div>
     </div>
   );

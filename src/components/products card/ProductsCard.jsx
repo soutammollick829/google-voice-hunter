@@ -1,19 +1,20 @@
 import { useContext, useState } from "react";
 import { FaShoppingBasket } from "react-icons/fa";
 import Tilt from "react-parallax-tilt";
-import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import UseCarts from "../../Hooks/UseCarts";
+
 
 const ProductsCard = ({ product }) => {
   const { _id, name, image, price, details } = product;
   const [scale, setScale] = useState(1.1);
   const { user} = useContext(AuthContext);
-const [,loading]= UseCarts();
+const [,refetch]= UseCarts();
 
   const handelAddToCart = (product) => {
     console.log(product);
+    
     if (user && user.email) {
       const cartItem = { orderId: _id, name, image, price, email: user?.email };
       fetch(`http://localhost:7700/carts`, {
@@ -40,7 +41,7 @@ const [,loading]= UseCarts();
               icon: "success",
               title: "Product add to cart",
             });
-            loading
+            refetch()
           }
         });
     }
