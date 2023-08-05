@@ -60,7 +60,7 @@ const MyCart = () => {
           <img className="w-12" src={paymentLogo3} alt="Logo" />
         </div>
       </div>
-      <div className="">
+      <div>
   <table className="table">
     {/* head */}
     <thead>
