@@ -9,7 +9,7 @@ const useCart = () => {
     const { refetch, data: cart=[] } = useQuery({
         queryKey: ['carts', user?.email],
         queryFn: async () =>{
-            const res = await fetch(`http://localhost:7700/carts?email=${user?.email}`)
+            const res = await fetch(`https://google-voice-hunter-server.vercel.app/carts?email=${user?.email}`)
 
             return res.json();
         } ,

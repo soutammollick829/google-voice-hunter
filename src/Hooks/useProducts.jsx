@@ -5,7 +5,7 @@ const useProducts = () => {
     const [loading , setLoading] = useState(true);
 
     useEffect(()=>{
-        fetch(`http://localhost:7700/products`)
+        fetch(`https://google-voice-hunter-server.vercel.app/products`)
         .then(res => res.json())
         .then(data =>{
             setProducts(data);

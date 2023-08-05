@@ -17,7 +17,7 @@ const [,refetch]= UseCarts();
     
     if (user && user.email) {
       const cartItem = { orderId: _id, name, image, price, email: user?.email };
-      fetch(`http://localhost:7700/carts`, {
+      fetch(`https://google-voice-hunter-server.vercel.app/carts`, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(cartItem),
